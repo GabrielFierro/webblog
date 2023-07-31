@@ -1,9 +1,6 @@
 import { data } from './data';
 
 const card = data.map((data) => {
-  const handleClick = () => {
-    console.log('bgColor: ', data.bgColor, ' textColor: ', data.textColor);
-  };
   return (
     <div
       key={data.id}
@@ -12,7 +9,6 @@ const card = data.map((data) => {
       <div className='flex'>
         <span
           className={`px-2 py-1 ${data.bgColor} ${data.textColor} font-bold rounded cursor-pointer w-auto`}
-          onClick={handleClick()}
         >
           {data.badge}
         </span>
