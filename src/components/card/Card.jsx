@@ -7,14 +7,16 @@ const card = data.map((data) => {
   return (
     <div
       key={data.id}
-      className='max-w-xl px-10 my-4 py-6 bg-darkGrey rounded-lg shadow-md mx-8 h-auto'
+      className='max-w-xl px-10 my-4 py-6 bg-darkGrey rounded-lg shadow-md mx-8 h-auto flex flex-col space-y-8'
     >
-      <span
-        className={`px-2 py-1 ${data.bgColor} ${data.textColor} font-bold rounded cursor-pointer`}
-        onClick={handleClick()}
-      >
-        {data.badge}
-      </span>
+      <div className='flex'>
+        <span
+          className={`px-2 py-1 ${data.bgColor} ${data.textColor} font-bold rounded cursor-pointer w-auto`}
+          onClick={handleClick()}
+        >
+          {data.badge}
+        </span>
+      </div>
       <div className='mt-2'>
         <h1 className='text-2xl text-white font-bold'>{data.title}</h1>
         <p className='mt-4 text-silver'>{data.description}</p>
