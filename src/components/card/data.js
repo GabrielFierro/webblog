@@ -8,7 +8,7 @@ export const data = [
     id: 0,
     badge: 'HTML',
     bgColor: 'bg-htmlAccentColor',
-    textColor: 'text-white',
+    textColor: 'text-black',
     title: '¿Qué es HTML?',
     src: HtmlAvatar,
     alt: 'Avatar acerca del autor Gabriel Fierro con un fondo naranja',
