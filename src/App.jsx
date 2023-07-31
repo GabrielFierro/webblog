@@ -9,9 +9,6 @@ function App() {
       </h1>
       <div className='h-full w-full flex flex-row flex-wrap'>
         <Card />
-        <Card />
-        <Card />
-        <Card />
       </div>
     </div>
   );
