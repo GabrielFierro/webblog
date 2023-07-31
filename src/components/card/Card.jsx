@@ -9,14 +9,12 @@ const card = data.map((data) => {
       key={data.id}
       className='max-w-xl px-10 my-4 py-6 bg-darkGrey rounded-lg shadow-md mx-8 h-auto'
     >
-      <div className='flex'>
-        <p
-          className={`px-2 py-1 ${data.bgColor} ${data.textColor} font-bold rounded cursor-pointer`}
-          onClick={handleClick()}
-        >
-          {data.badge}
-        </p>
-      </div>
+      <span
+        className={`px-2 py-1 ${data.bgColor} ${data.textColor} font-bold rounded cursor-pointer`}
+        onClick={handleClick()}
+      >
+        {data.badge}
+      </span>
       <div className='mt-2'>
         <h1 className='text-2xl text-white font-bold'>{data.title}</h1>
         <p className='mt-4 text-silver'>{data.description}</p>
