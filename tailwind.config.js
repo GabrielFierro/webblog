@@ -7,8 +7,8 @@ export default {
       dark: '#131316',
       darkGrey: '#262626',
       frenchGrey: '#ABA8B2',
-      htmlAccentColor: '#E44D26', // Accent color
-      cssAccentColor: '#264DE4', // Accent color
+      htmlAccentColor: '#F48454', // Accent color
+      cssAccentColor: '#1E3EB6', // Accent color
       jsAccentColor: '#F7DF1E', // Accent color
       reactAccentColor: '#61DAFB', // Accent color
       silver: '#CCCCCC',
@@ -17,8 +17,8 @@ export default {
     extend: {
       keyframes: {
         color: {
-          '0%': { color: '#E44D26' },
-          '35%': { color: '#264DE4' },
+          '0%': { color: '#F48454' },
+          '35%': { color: '#1E3EB6' },
           '70%': { color: '#F7DF1E' },
           '100%': { color: '#61DAFB' }
         }
