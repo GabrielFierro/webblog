@@ -7,7 +7,7 @@ const card = data.map((data) => {
   return (
     <div
       key={data.id}
-      className='max-w-xl px-10 my-4 py-6 bg-darkGrey rounded-lg shadow-md mx-8 h-auto flex flex-col space-y-8'
+      className='max-w-xl px-10 my-4 py-6 bg-darkGrey rounded-lg shadow-md mx-8 h-auto flex flex-col justify-between space-y-8'
     >
       <div className='flex'>
         <span
