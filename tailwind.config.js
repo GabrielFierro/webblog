@@ -3,11 +3,28 @@ export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     colors: {
+      black: '#1A1A1A',
       dark: '#131316',
-      hAccent: '#E96228', // Accent color
+      darkGrey: '#262626',
+      frenchGrey: '#ABA8B2',
+      htmlAccentColor: '#E44D26', // Accent color
+      cssAccentColor: '#264DE4', // Accent color
+      jsAccentColor: '#F7DF1E', // Accent color
+      silver: '#CCCCCC',
       white: '#FFFFFF'
     },
-    extend: {}
+    extend: {
+      keyframes: {
+        color: {
+          '0%': { color: '#E44D26' },
+          '50%': { color: '#264DE4' },
+          '100%': { color: '#F7DF1E' }
+        }
+      },
+      animation: {
+        'changing-color': 'color 10s linear infinite'
+      }
+    }
   },
   plugins: []
 };
