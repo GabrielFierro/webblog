@@ -15,7 +15,7 @@ function App() {
           <li className='text-black bg-jsAccentColor px-2 py-1 font-bold text-xl hover:scale-125 rounded cursor-pointer'>
             <Link to={`/js`}>JavaScript</Link>
           </li>
-          <li className='bg-reactAccentColor px-2 py-1 font-bold text-xl hover:scale-125text-black hover:scale-125 rounded cursor-pointer '>
+          <li className='text-black bg-reactAccentColor px-2 py-1 font-bold text-xl  hover:scale-125 rounded cursor-pointer '>
             <Link to={`/react`}>React</Link>
           </li>
         </ul>
