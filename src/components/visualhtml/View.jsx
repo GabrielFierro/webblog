@@ -1,4 +1,4 @@
-import CardHtml from '../../components/card/Card';
+import CardHtml from '../card/Card';
 import { data } from './htmlData';
 
 export default function Card() {

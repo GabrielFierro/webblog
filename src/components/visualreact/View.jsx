@@ -1,4 +1,4 @@
-import CardReact from '../../components/card/Card';
+import CardReact from '../card/Card';
 import { data } from './reactData';
 
 export default function Card() {

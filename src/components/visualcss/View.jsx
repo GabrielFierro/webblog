@@ -1,4 +1,4 @@
-import CardCss from '../../components/card/Card';
+import CardCss from '../card/Card';
 import { data } from './cssData';
 
 export default function Card() {
