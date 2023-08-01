@@ -4,7 +4,6 @@ import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
-// import Header from './components/header/Header.jsx';
 import HtmlCard from './components/visualhtml/View.jsx';
 import CssCard from './components/visualcss/View.jsx';
 import JsCard from './components/visualjs/View.jsx';
