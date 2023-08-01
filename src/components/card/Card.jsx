@@ -9,7 +9,7 @@ export default function Card({ data }) {
     return (
       <div
         key={data.id}
-        className='max-w-xl px-10 my-4 py-6 bg-darkGrey rounded-lg shadow-md mx-8 h-auto flex flex-col justify-between space-y-8'
+        className='max-w-xl px-10 my-4 py-6 bg-darkGrey rounded-lg shadow-md mx-8 h-auto flex flex-col justify-between space-y-8 shadow-black'
       >
         <div className='flex'>
           <span
@@ -19,7 +19,7 @@ export default function Card({ data }) {
           </span>
         </div>
         <div>
-          <h1 className='text-2xl text-white font-bold'>{data.title}</h1>
+          <h1 className='text-2xl text-title font-bold'>{data.title}</h1>
           <p className='mt-4 text-silver'>{data.description}</p>
         </div>
         <div className='flex flex-row justify-between items-centen mt-4'>
@@ -47,7 +47,7 @@ export default function Card({ data }) {
       <div className='flex w-full pl-8'>
         <button
           onClick={goBack}
-          className='text-base rounded-r-none hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer hover:bg-greyRegular bg-greyLight text-white border duration-200 ease-in-out border-darkGrey transition'
+          className='text-base rounded-r-none hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer hover:bg-greyLight bg-greyRegular text-white border duration-200 ease-in-out border-darkGrey transition'
         >
           <div className='flex leading-5'>
             <svg
