@@ -4,35 +4,31 @@ import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
-import Header from './components/header/Header.jsx';
-import HtmlCard from './components/visualhtml/Card.jsx';
-import CssCard from './components/visualcss/Card.jsx';
-import JsCard from './components/visualjs/Card.jsx';
-import ReactCard from './components/visualreact/Card.jsx';
+// import Header from './components/header/Header.jsx';
+import HtmlCard from './components/visualhtml/View.jsx';
+import CssCard from './components/visualcss/View.jsx';
+import JsCard from './components/visualjs/View.jsx';
+import ReactCard from './components/visualreact/View.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />
-  },
-  {
-    path: '/pages',
-    element: <Header />,
+    element: <App />,
     children: [
       {
-        path: '/pages/html',
+        path: '/html',
         element: <HtmlCard />
       },
       {
-        path: 'css',
+        path: '/css',
         element: <CssCard />
       },
       {
-        path: 'js',
+        path: '/js',
         element: <JsCard />
       },
       {
-        path: 'react',
+        path: '/react',
         element: <ReactCard />
       }
     ]
