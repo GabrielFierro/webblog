@@ -18,12 +18,15 @@ export default function Card({ data }) {
             {data.badge}
           </span>
         </div>
-        <div className='mt-2'>
+        <div>
           <h1 className='text-2xl text-white font-bold'>{data.title}</h1>
           <p className='mt-4 text-silver'>{data.description}</p>
         </div>
         <div className='flex flex-row justify-between items-centen mt-4'>
-          <a className='text-frenchGrey hover:underline' href='#'>
+          <a
+            className='text-frenchGrey hover:underline hover:text-white'
+            href='#'
+          >
             Read more
           </a>
           <div className='flex items-center'>
@@ -44,7 +47,7 @@ export default function Card({ data }) {
       <div className='flex w-full pl-8'>
         <button
           onClick={goBack}
-          className='text-base rounded-r-none hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer hover:bg-orangeRegular bg-orangeLight text-white border duration-200 ease-in-out border-darkGrey transition'
+          className='text-base rounded-r-none hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer hover:bg-greyRegular bg-greyLight text-white border duration-200 ease-in-out border-darkGrey transition'
         >
           <div className='flex leading-5'>
             <svg
