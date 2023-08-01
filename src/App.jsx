@@ -1,16 +1,26 @@
-import Card from './components/card/Card';
+import { Link } from 'react-router-dom';
+import Header from './components/header/Header';
 
 function App() {
   return (
-    <div className='flex flex-col items-center py-12 justify-center bg-black min-w-full h-full px-2'>
-      <h1 className='font-bold text-4xl mb-12'>
-        <span className='text-white '>Welcome to </span>
-        <span className='animate-changing-color'>Webblog</span>
-      </h1>
-      <div className='h-full w-full flex flex-row flex-wrap'>
-        <Card />
-      </div>
-    </div>
+    <Header>
+      <nav className='w-full'>
+        <ul className='flex flex-row justify-evenly items-center w-auto'>
+          <li className='text-htmlAccentColor font-bold'>
+            <Link to={`pages/html`}>HTML</Link>
+          </li>
+          <li className='text-cssAccentColor font-bold'>
+            <Link to={`pages/css`}>CSS</Link>
+          </li>
+          <li className='text-jsAccentColor font-bold'>
+            <Link to={`pages/js`}>JavaScript</Link>
+          </li>
+          <li className='text-reactAccentColor font-bold'>
+            <Link to={`pages/react`}>React</Link>
+          </li>
+        </ul>
+      </nav>
+    </Header>
   );
 }
 
