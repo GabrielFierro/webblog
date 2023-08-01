@@ -11,6 +11,8 @@ export default {
       cssAccentColor: '#1E3EB6', // Accent color
       jsAccentColor: '#F7DF1E', // Accent color
       reactAccentColor: '#61DAFB', // Accent color
+      greyLight: '#595959',
+      greyRegular: '#3B3B3B',
       silver: '#CCCCCC',
       white: '#FFFFFF'
     },
