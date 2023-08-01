@@ -13,7 +13,8 @@ export default {
       reactAccentColor: '#61DAFB', // Accent color
       greyLight: '#595959',
       greyRegular: '#3B3B3B',
-      silver: '#CCCCCC',
+      silver: '#D8D8D8',
+      title: '#E1E1E1',
       white: '#FFFFFF'
     },
     extend: {
