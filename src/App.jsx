@@ -3,7 +3,7 @@ import Header from './components/header/Header';
 
 function App() {
   const classes =
-    'px-2 py-1 font-bold text-xl hover:scale-125 rounded cursor-pointer';
+    'px-4 py-1 font-merriweather-regular font-bold text-xl hover:scale-125 rounded cursor-pointer';
   return (
     <Header>
       <nav className='w-full mb-6'>
