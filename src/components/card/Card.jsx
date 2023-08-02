@@ -1,11 +1,6 @@
-import { useNavigate } from 'react-router-dom';
 import BackButton from '../button/BackButton';
 
 export default function Card({ data }) {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
   const card = data.map((data) => {
     return (
       <div
@@ -14,18 +9,22 @@ export default function Card({ data }) {
       >
         <div className='flex'>
           <span
-            className={`px-2 py-1 ${data.bgColor} ${data.textColor} font-bold rounded cursor-pointer w-auto`}
+            className={`px-3 py-1 ${data.bgColor} ${data.textColor} font-merriweather-regular font-bold rounded cursor-pointer w-auto`}
           >
             {data.badge}
           </span>
         </div>
         <div>
-          <h1 className='text-2xl text-title font-bold'>{data.title}</h1>
-          <p className='mt-4 text-silver'>{data.description}</p>
+          <h1 className='text-2xl text-title font-merriweather-bold font-bold'>
+            {data.title}
+          </h1>
+          <p className='mt-4 text-silver font-merriweather-regular'>
+            {data.description}
+          </p>
         </div>
         <div className='flex flex-row justify-between items-centen mt-4'>
           <a
-            className='text-frenchGrey hover:underline hover:text-white'
+            className='text-frenchGrey hover:underline hover:text-white font-merriweather-light'
             href='#'
           >
             Read more
@@ -36,7 +35,9 @@ export default function Card({ data }) {
               src={data.src}
               alt={data.alt}
             />
-            <h2 className='text-white font-bold'>Gabriel Fierro</h2>
+            <h2 className='text-white font-merriweather-bold font-bold'>
+              Gabriel Fierro
+            </h2>
           </div>
         </div>
       </div>
@@ -46,7 +47,7 @@ export default function Card({ data }) {
   return (
     <div className='flex flex-row flex-wrap'>
       <div className='flex w-full pl-8'>
-        <BackButton onClick={goBack} />
+        <BackButton />
       </div>
       {card}
     </div>
