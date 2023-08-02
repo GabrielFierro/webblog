@@ -4,10 +4,10 @@ import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
-import HtmlCard from './components/visualhtml/View.jsx';
-import CssCard from './components/visualcss/View.jsx';
-import JsCard from './components/visualjs/View.jsx';
-import ReactCard from './components/visualreact/View.jsx';
+import HtmlCard from './components/visual/HtmlView.jsx';
+import CssCard from './components/visual/CssView.jsx';
+import JsCard from './components/visual/JsView.jsx';
+import ReactCard from './components/visual/ReactView.jsx';
 
 const router = createBrowserRouter([
   {
