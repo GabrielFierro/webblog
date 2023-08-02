@@ -7,3 +7,31 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: 'Merrieweather Light';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Merrieweather Font'),
+    url('../public/fonts/Merriweather/Merriweather-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Rubik Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Rubik Font'),
+    url('../public/fonts/Merriweather/Merriweather-Regular.woff2')
+      format('woff2');
+}
+
+@font-face {
+  font-family: 'Rubik Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Rubik Font'),
+    url('../public/fonts/Merriweather/Merriweather-Bold.woff2') format('woff2');
+}

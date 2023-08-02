@@ -2,6 +2,11 @@
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
+    fontFamily: {
+      'merriweather-light': ['Merrieweather Light', 'sans-serif'],
+      'merriweather-regular': ['Merrieweather Regular', 'sans-serif'],
+      'merriweather-bold': ['Merrieweather Bold', 'sans-serif']
+    },
     colors: {
       black: '#1A1A1A',
       dark: '#131316',
