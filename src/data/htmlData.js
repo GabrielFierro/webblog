@@ -1,4 +1,4 @@
-import HtmlAvatar from '../../assets/images/gabrielfierro-html.webp';
+import HtmlAvatar from '../assets/images/gabrielfierro-html.webp';
 
 // Función para crear objetos con las propiedades comunes
 function createData(id, badge, title, src, alt, description) {
